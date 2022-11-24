@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Rotativa" />
+    <None Remove="Rotativa.AspNetCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\Rotativa\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Rotativa.AspNetCore" Version="1.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\Rotativa\._Bom" />
+    <Content Remove="wwwroot\Rotativa\._PackageInfo" />
+    <Content Remove="wwwroot\Rotativa\._Payload" />
+    <Content Remove="wwwroot\Rotativa\._Scripts" />
+    <Content Remove="wwwroot\Rotativa\Bom" />
+    <Content Remove="wwwroot\Rotativa\PackageInfo" />
+    <Content Remove="wwwroot\Rotativa\Payload" />
+    <Content Remove="wwwroot\Rotativa\Scripts" />
+    <Content Remove="wwwroot\Rotativa\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Rotativa\._Bom" />
+    <None Include="wwwroot\Rotativa\._PackageInfo" />
+    <None Include="wwwroot\Rotativa\._Payload" />
+    <None Include="wwwroot\Rotativa\._Scripts" />
+    <None Include="wwwroot\Rotativa\Bom" />
+    <None Include="wwwroot\Rotativa\PackageInfo" />
+    <None Include="wwwroot\Rotativa\Payload" />
+    <None Include="wwwroot\Rotativa\Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\Rotativa\wkhtmltopdf.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
